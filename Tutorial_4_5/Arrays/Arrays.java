@@ -14,7 +14,7 @@ public class Arrays {
     public int countNegative(int a[]) throws NullPointerException {
         try {
             int totalNegative = 0;
-            for(int i = 0; i < a.length - 1; i++) {
+            for(int i = 0; i < a.length; i++) {
                 if(a[i] < 0) {
                     totalNegative++;
                 }
@@ -35,7 +35,7 @@ public class Arrays {
     public int min(int a[]) throws NullPointerException {
         try {
             int min = a[0];
-            for(int i = 1; i < a.length - 1; i++){
+            for(int i = 1; i < a.length; i++){
                 if(a[i] < min) {
                     min = a[i];
                 }
@@ -58,7 +58,7 @@ public class Arrays {
      */
     public boolean isAscSorted(int a[]) throws NullPointerException {
         try {
-            for(int i = 0; i < a.length - 1; i++) {
+            for(int i = 0; i < a.length; i++) {
                 if(a[i] >= a[i+1]) {
                     return false;
                 }
@@ -80,7 +80,7 @@ public class Arrays {
     public int length(char a[]) throws NullPointerException {
         try {
             int length = 0;
-            for(int i = 0; i < a.length - 1; i++) {
+            for(int i = 0; i < a.length; i++) {
                 if(a[i] != '\u0000'){
                     length++;
                 }
@@ -141,7 +141,7 @@ public class Arrays {
      * @effects
      *  return String contains frequencies of each element of an array of real(integers)
      */
-    public String freq(int a[]) {
+    public String freq(int a[]) throws NullPointerException {
         return "TODO";
     }
 }
